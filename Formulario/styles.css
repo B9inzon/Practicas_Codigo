@@ -19,15 +19,71 @@ form {
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
+    padding-bottom: 2em;
 }
 
 fieldset {
     border: none;
     padding: 2rem 0;
-
+    border-bottom: 3px solid #3b3b4f;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    padding: 1px 2px;
+}
+
+input[id="terms-and-conditions"] {
+    color: #dfdfe2;
+}
+
+a {
+    color: #dfdfe2;
 }

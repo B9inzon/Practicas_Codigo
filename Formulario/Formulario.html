@@ -12,6 +12,9 @@
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
     <form action="https://register-demo.freecodecamp.org" method="post">
+
+        <!--Primer fieldset-->
+
         <fieldset>
             <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"
                     required></label>
@@ -21,15 +24,21 @@
             <label for="new-password">Create a New Password: <input id="new-password" name="password" type="password"
                     required pattern="[a-z0-5]{8,}"></label>
         </fieldset>
+
+        <!--Segundo fieldset-->
+
         <fieldset>
             <legend>Account type (required)</legend>
             <label for="personal-account">
-                <input type="radio" name="account-type" checked> Personal
+                <input class="inline" type="radio" name="account-type" checked> Personal
             </label>
             <label for="business-account">
-                <input type="radio" name="account-type"> Business
+                <input class="inline" type="radio" name="account-type"> Business
             </label>
         </fieldset>
+
+        <!--Tercer fieldset-->
+
         <fieldset>
             <label for="profile-picture">
                 Upload a profile picture: <input id="profile-picture" name="profile-picture" type="file">
