@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Certificación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Proyecto de Certificación</h1>
+        <p id="description">Este es el proyecto de certificación de freeCodeCamp</p>
+    </header>
+
+    <!--Aqui empieza el formulario-->
+    <form id="survey-form">
+
+        <!--fieldset de datos básicos-->
+
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label id="name-label" for="name"> Escribe tu nombre:
+                <input id="name" name="name" type="text" required placeholder="Escribe tu nombre aquí">
+            </label>
+            <label id="email-label" for="email"> Escribe tu dirección de email:
+                <input id="email" type="email" pattern="nombre.apellido@correo.co"
+                    placeholder="nombre.apellido@correo.co" required placeholder="Escribe tu email aquí">
+            </label>
+            <label id="number-label" for="number">Escribe tu númereo de telefono:
+                <input id="number" name="phone-number" type="number" pattern="[0-9]{ , 10}" min="10" max="10" required
+                    placeholder="Escribe tu numero de telefono aquí">
+            </label>
+        </fieldset>
+
+        <!--fieldset de botones circulares-->
+
+        <fieldset>
+            <legend>Botón circular</legend>
+            <label for="Botón-1">
+                <input type="radio" name="Botón circular" value="1" checked>Botón 1
+            </label>
+            <label for="Botón-2">
+                <input type="radio" name="Botón circular" value="2">Botón 2
+            </label>
+            <label for="Botón-3">
+                <input type="radio" name="Botón circular" value="3">Botón 3
+            </label>
+        </fieldset>
+
+        <!--fieldset de dropdown-->
+
+        <fieldset>
+            <legend>Dropdown</legend>
+            <label id="dropdown-label" for="dropdown">Selecciona algo a continuación:
+                <select id="dropdown" name="dropdown">
+                    <option value="">(Seleciona algo)</option>
+                    <option value="1">Algo 1</option>
+                    <option value="2">Algo 2</option>
+                    <option value="3">Algo 3</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <!--fieldset de checkboxes-->
+
+        <fieldset>
+            <legend>Checkboxes (at least one must be cheched)</legend>
+            <label for="">
+                <input id="Checkbox 1" type="checkbox" value="1">Checkbox 1
+            </label>
+            <label for="">
+                <input id="Checkbox 2" type="checkbox" value="2">Checkbox 2
+            </label>
+            <label for="">
+                <input id="Checkbox 3" type="checkbox" value="3">Checkbox 3
+            </label>
+            <label for="">
+                <input id="Checkbox 4" type="checkbox" value="4">Checkbox 4
+            </label>
+        </fieldset>
+
+        <!--fieldset del cuadro de texto-->
+
+        <fieldset>
+            <label for="textarea">Escribe algo aquí
+                <textarea name="textarea" id="textarea" rows="3" cols="30"
+                    placeholder="Esta es una area de texto para escribir mucho texto..."></textarea>
+            </label>
+        </fieldset>
+        <button id="submit" type="submit">Registrar</button>
+    </form>
+</body>
+
+</html>
