@@ -87,3 +87,12 @@ input[id="terms-and-conditions"] {
 a {
     color: #dfdfe2;
 }
+
+.inline {
+    display: inline;
+}
+
+input[type="submit"]:hover {
+    background-color: #6C6C81;
+
+}
