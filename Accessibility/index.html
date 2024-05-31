@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <link rel="stylesheet" href="styles.css">
+    <title>Learn Accessibility</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="logopropio">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="s">INFO</a></li>
+                <li><a href="#html-questions" accesskey="h">HTML</a></li>
+                <li><a href="#css-questions" accesskey="c">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+
+            <!--sECCIÓN UNO-->
+
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Students Info</h2>
+                <div class="info">
+                    <label for="student-name">Name: </label>
+                    <input id="student-name" type="text" name="name">
+                </div>
+                <div class="info">
+                    <label for="email-address">Email: </label>
+                    <input id="email-address" type="email" name="email">
+                </div>
+                <div class="info">
+                    <label for="date-of-birth">D.O.B. <span class="sr-only">(Date of Birth)</span></label>
+                    <input id="date-of-birth" type="date" name="birth">
+                </div>
+            </section>
+
+            <!--SECCIÓN DOS-->
+
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML Questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="fieldsetone">
+                        <legend>Do you know HTML?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" value="True" name="q1-a1">True</label>
+                            </li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a1" value="False"
+                                        name="q1-a2">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="fieldsettwo">
+                        <legend>Would you like to learn HTML?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="True" name="q2-a1">True</label>
+                            </li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="False"
+                                        name="q2-a2">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+
+            <!--SECCIÓN TRES-->
+
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block"><label for="preferrer">Do you know CSS?</label></div>
+                    <div class="answer"><select name="preferrer" id="preferrer" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select></div>
+                    <div class="question-block"><label for="textarea">Would you like to learn CSS?</label></div>
+                    <div class="answer"><textarea name="textarea" id="textarea" rows="5" cols="60"
+                            placeholder="I would like learn..."></textarea></div>
+                </div>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
+</body>
+
+</html>
