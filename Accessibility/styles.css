@@ -6,7 +6,7 @@
 
 body {
     background: #f5f6f7;
-    color: #1b1b32;
+    color: #1b2132;
     font-family: Helvetica;
     margin: 0;
 }
@@ -123,7 +123,7 @@ p::before {
 }
 
 input {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .info input {

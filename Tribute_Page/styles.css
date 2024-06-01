@@ -1,0 +1,110 @@
+.img-div {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    height: 800%;
+    width: 80%;
+    max-width: 80%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#image {
+    width: max (80px, 2vw);
+    max-height: 600px;
+    padding: 5px;
+    display: block;
+    justify-content: space-around;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+nav>ul>li {
+    color: rgb(60, 186, 211);
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main>div>h1 {
+    border-bottom: 3px solid rgb(60, 186, 211);
+}
+
+main {
+    justify-content: center;
+}
+
+.principal {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 900px;
+    padding: 90px;
+}
+
+body {
+    background: #f5f6f7;
+    color: #1b2132;
+    font-family: Helvetica;
+    margin: 0;
+    align-items: center;
+}
+
+img-header {
+    width: max(80px, 35vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 8;
+    padding: 0.4rem;
+}
+
+#title-header {
+    color: rgb(60, 186, 211);
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer,
+footer a {
+    color: rgb(60, 186, 211);
+}
+
+address {
+    text-align: center;
+    padding: 10px;
+}
+
+.Historias {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
