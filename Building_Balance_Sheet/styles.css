@@ -1,3 +1,16 @@
+span[class~="sr-only"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -5,19 +18,6 @@ html {
 body {
     font-family: sans-serif;
     color: #0a0a23;
-}
-
-span[class~="sr-only"] {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    clip-path: inset(50%) !important;
-    width: 1px !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    position: absolute !important;
-    padding: 0 !important;
-    margin: -1px !important;
 }
 
 h1 {
@@ -50,12 +50,12 @@ section {
     display: flex;
     justify-content: flex-end;
     position: sticky;
-    top: 0;
-    color: #fff;
-    background-color: #0a0a23;
-    margin: 0 -2px;
-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
     z-index: 999;
+    top: 0;
+    background: #0a0a23;
+    color: #fff;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    margin: 0 -2px;
 }
 
 #years span[class] {
@@ -115,14 +115,14 @@ tr.total td:nth-of-type(3) {
 }
 
 tr.total:hover {
-    background: #99c9ff;
+    background-color: #99c9ff;
 }
 
-td[class="current"] {
+td.current {
     font-style: italic;
 }
 
-tr[class="data"] {
+tr.data {
     background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
 }
 
@@ -134,16 +134,16 @@ tr.data th {
 
 tr.data th .description {
     display: block;
+    font-weight: normal;
     font-style: italic;
-    font-weight: normal !important;
     padding: 1rem 0 0.75rem;
     margin-right: -13.5rem;
 }
 
 tr.data td {
     vertical-align: top;
-    text-align: right;
     padding: 0.3rem 0.25rem 0;
+    text-align: right;
 }
 
 tr.data td:last-of-type {
