@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!--Este Script se puso en el head-->
+        <!-- <script>
+            function myFunction(){
+                document.getElementById('demo').innerHTML = "Texto agregado desde un script en el head con innerHTML";
+            }
+        </script> -->
+    </head>
+    <body>
+        <h2>Script de js en la etiqueta head</h2>
+
+        <p id="demo">Un parrafo que se va a reemplazar con texto de un script de JS</p>
+        
+        <button type="button" onclick="myExternalScript()">Cambia el texto</button> <!--Se hace la "llamada" al nombre de la función externa myExternalScript-->
+        <br>
+        <br>               
+        <button type="button" onclick="getDateFunction()">La hora es...</button> <!--Se hace la "llamada" al nombre de la función externa getDateFunction-->
+        <br>
+        <br>
+        <p id="demo1">Un parrafo que se va a reemplazar con texto de un script de JS</p>
+        <br>
+        <br>
+        <button type="button" onclick="this.innerHTML = Date()">La hora es...</button> <!--CAMBIANDO EL CONTENIDO DEL PROPIO ELEMENTO CON this.innerHTML-->
+
+        <!--Este Script se puso en el body-->
+        <!-- <script>
+            function myFunction(){
+                document.getElementById('demo').innerHTML = "Texto agregado desde un script en el head con innerHTML";
+            }
+        </script>-->
+
+        <!--Llamando a un script externo-->
+        <script src="scriptInHEAD.js"></script>
+    </body>
+</html>
