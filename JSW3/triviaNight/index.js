@@ -14,7 +14,7 @@ const startButton = document.getElementById("startBtn");
 //     .then((data) => data.results);
 // }
 
-//todo Función con async/await
+//! Función con async/await
 async function fetchTriviaQuestions(){
     try {
         const response = await fetch("https://opentdb.com/api.php?amount=10");
@@ -49,10 +49,14 @@ function displayTriviaQuestions(questions) {
         </label>
       `;
       questionElement.appendChild(answerElement);
+      // if (answer === question.correct_answer) {
+      //   answerElement.innerHTML += "✅";
+      // }
     });
-
-    quizContainer.appendChild(questionElement); // Move this line outside the inner loop
-  });
+    quizContainer.appendChild(questionElement); 
+    
+  }
+);
 }
 
 startButton.addEventListener("click", async () => {
