@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Template Strings</h1>
+    <p id="demo"></p>
+
+    <script>
+        let header = "Template Strings"                      /* AQUÍ SE GENERAN DOS VARIABLES PARA SER UTILIZADAS MÁS ADELANTE*/
+        let tags = ["template strings", "javascript", "es6"] /* AQUÍ SE GENERAN DOS VARIABLES PARA SER UTILIZADAS MÁS ADELANTE*/
+        
+/* LUEGO AQUÍ SE GENERA UNA VARIABLE "HTML" QUE USA A LAS VARIABLES ANTERIORES Y 
+EN UN BUCLE LLAMA A CADA ELEMENTO DENTRO DE LA VARIABLE "TAGS" QUE ES UN ARRAY Y 
+LAS RENDERIZA EN UNA ul MEDIANTE const x of tags */
+        let html = `<h2>${header}</h2><ul>` 
+        for (const x of tags) {
+            html += `<li>${x}</li>`
+        }
+
+        html += `</ul>`
+        document.getElementById('demo').innerHTML = html /* POR ÚLTIMO AQUI GENERA A LA VARIABLE "html" DENTRO DEL ELEMENTO p QUE TIRENE ID "demo" */
+    </script>
+</body>
+
+</html>
